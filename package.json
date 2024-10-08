@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Practice",
   "main": "index.html",
+  "type": "module",
   "scripts": {
     "start": "lite-server"
   },
