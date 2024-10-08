@@ -1,8 +1,15 @@
-import debounce from "./debounce";
+import debounce from "./debounce.js";
 
-const debouncedFn = debounce(console.log, 500);
+const obj = {
+    message: 'Hello',
+    greet: function (time) {
+        console.log(this.message, time);
+    },
+};
 
-setTimeout(()=>debouncedFn('100'), 100);
-setTimeout(()=>debouncedFn('200'), 100);
-setTimeout(()=>debouncedFn('700'), 700);
-setTimeout(()=>debouncedFn('1000'), 1000);
+const debouncedFn = debounce(obj.greet, 500);
+
+setTimeout(()=>debouncedFn.call(obj,'100'), 100);
+setTimeout(()=>debouncedFn.call(obj,'100'), 100);
+setTimeout(()=>debouncedFn.call(obj,'700'), 700);
+setTimeout(()=>debouncedFn.call(obj,'1000'), 1000);
