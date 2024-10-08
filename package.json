@@ -1,0 +1,14 @@
+{
+  "name": "system-design",
+  "version": "1.0.0",
+  "description": "Practice",
+  "main": "index.html",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Srujan",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
