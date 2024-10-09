@@ -1,0 +1,18 @@
+.autocomplete-options-container{
+    position: relative;
+    width: 9rem;
+}
+
+.list {
+    position: absolute;
+    margin: 0px;
+    list-style: none;
+    padding: 0px;
+    border: solid #333;
+    border-width: 0px 1px 1px 1px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+.list .active{
+    background-color: skyblue;
+}
